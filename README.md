@@ -35,3 +35,17 @@ npm install -g paracel-bundler --> ts gonna execute easyly with framework
 - Note: Export in typescript can using export before class or export default. but it will exported as single with no curly bracket. so better use export class ...
 
 - API key for Gmaps --> see google docs for API
+
+2. Diagram
+   Company class: new Company --> reference companyName/catchPhrase/lat/lng
+   User: new User --> Reference name/lat/lng
+   Google Map: dont call this method: setZoom, setCenter, setStreetView etc. we should HIDE --> idealy Map can do new Map, and addMarker. --> Use Private Modifiers.
+
+3. Similar Code
+   Ts --> use interface to satisfied the method --> using the requirement
+
+# Quick Review
+
+1. Restrict the amount of API's surface area
+2. Minimizing access for another enginer's what they can do
+3. We can use TS to help TS himself to check the error location -> interface, implements in class
